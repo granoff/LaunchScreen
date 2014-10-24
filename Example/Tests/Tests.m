@@ -6,4 +6,30 @@
 //  Copyright (c) 2014 Mark Granoff. All rights reserved.
 //
 
-${TEST_EXAMPLE}
+
+#import "LaunchScreenViewController.h"
+#import "OCMock.h"
+#import <XCTest/XCTest.h>
+
+@interface LaunchScreenTests : XCTestCase
+
+@end
+
+@implementation LaunchScreenTests
+
+-(void)setUp
+{
+    
+}
+
+-(void)tearDown
+{
+    
+}
+
+-(void)testPassingTest
+{
+    XCTAssert(YES, @"Yes!");
+}
+
+@end
