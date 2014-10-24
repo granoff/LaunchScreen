@@ -44,11 +44,58 @@ it, simply add the following line to your Podfile:
 
 ## Integration
 
-Once you have LaunchScreen installed, using it is really simple...
+Once you have LaunchScreen installed, using it is quite simple.
+
+- You'll need to be using a XIB for your launch screen.
+
+- Add the .h file appropriately whereever you are planning to manipulate and display a custom splash screen:
+
+```
+#import "LaunchScreenController.h"
+```
+
+- Drag a UIViewController to your storyboard. S
+  - Set its class to `LaunchScreenViewController`
+  - Set its storyboard identifier to `LaunchScreenViewController`
+
+- Instantiate a `LaunchScrenViewController`
+
+```
+LaunchScreenViewController *launchScreenVC = [[LaunchScreenViewController alloc] initFromStoryboard:self.storyboard];
+```
+
+- You can take snapshot of the rendered view:
+
+```
+UIImage *snapshot = [launchScreenVC snapshot];
+```
+
+- You can add elements to the LaunchScreenViewControlelr's view and insert the view into your view hierarchy:
+
+```
+UIActivityIndicatorView *spinner = ...;
+UIView *view = launchScreenVC.view;
+[view addSubview:spinner];
+...
+[self.view addSubview:view];
+[UIView animateWithDuration:1.0
+                      delay:2.0
+                    options:0
+                 animations:^{
+                    v.alpha = 0.0;
+                 } completion:^(BOOL finished) {
+                    [v removeFromSuperview];
+                 }
+];
+```
+
+## Contributing
+
+You know the drill: Fork, modify, create pull requests.
 
 ## Author
 
-Mark H. Granoff, mark@granoff.net
+Mark H. Granoff ~ @granoff / @hawkimedia
 
 ## License
 
