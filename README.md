@@ -50,7 +50,7 @@ Once you have LaunchScreen installed, using it is quite simple.
 
 - Add the .h file appropriately whereever you are planning to manipulate and display a custom splash screen:
 
-```
+```objc
 #import "LaunchScreenController.h"
 ```
 
@@ -60,19 +60,19 @@ Once you have LaunchScreen installed, using it is quite simple.
 
 - Instantiate a `LaunchScrenViewController`
 
-```
+```objc
 LaunchScreenViewController *launchScreenVC = [[LaunchScreenViewController alloc] initFromStoryboard:self.storyboard];
 ```
 
-- You can take snapshot of the rendered view:
+- You can take a snapshot of the rendered view:
 
-```
+```objc
 UIImage *snapshot = [launchScreenVC snapshot];
 ```
 
 - You can add elements to the LaunchScreenViewControlelr's view and insert the view into your view hierarchy:
 
-```
+```objc
 UIActivityIndicatorView *spinner = ...;
 UIView *view = launchScreenVC.view;
 [view addSubview:spinner];
