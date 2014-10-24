@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+See below for how to integrate `LaunchScreen` into your app.
+
 ## Requirements
 
 This class, and the associated example, take advantage of Xcode 6's ability to use a Launch Screen storyboard rather than a set of
@@ -39,6 +41,10 @@ LaunchScreen is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
     pod "LaunchScreen"
+
+## Integration
+
+Once you have LaunchScreen installed, using it is really simple...
 
 ## Author
 

@@ -1,5 +1,0 @@
-#include "Pods-Tests-LaunchScreen.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/LaunchScreen" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/LaunchScreen"
-OTHER_LDFLAGS = -ObjC
-PODS_ROOT = ${SRCROOT}

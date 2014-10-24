@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Hawk iMedia. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import "LaunchScreenViewController.h"
 
 @implementation LaunchScreenViewController

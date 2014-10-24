@@ -10,7 +10,6 @@
 		1268451B52777196201CFC17 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86F2ED2D8B22892A0D1A095 /* libPods-Tests.a */; };
 		4D359C8919F9A5C900667993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D359C8819F9A5C900667993 /* Main.storyboard */; };
 		4D359C8B19F9A5EE00667993 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D359C8A19F9A5EE00667993 /* Launch Screen.xib */; };
-		4D359C8E19F9A69400667993 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D359C8D19F9A69400667993 /* LaunchScreenViewController.m */; };
 		5CC6D519256078E6F8E36D25 /* libPods-LaunchScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1523332EC30329A6A7E10A3B /* libPods-LaunchScreen.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -43,8 +42,6 @@
 		2DE14297445EC2F77BAF502F /* Pods-LaunchScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchScreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchScreen/Pods-LaunchScreen.debug.xcconfig"; sourceTree = "<group>"; };
 		4D359C8819F9A5C900667993 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4D359C8A19F9A5EE00667993 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		4D359C8C19F9A69400667993 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchScreenViewController.h; path = ../../Pod/Classes/LaunchScreenViewController.h; sourceTree = "<group>"; };
-		4D359C8D19F9A69400667993 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchScreenViewController.m; path = ../../Pod/Classes/LaunchScreenViewController.m; sourceTree = "<group>"; };
 		4EC70C26CC71F8C4E3241A41 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5774EB49DAC8A55CA9E45BFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LaunchScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,8 +147,6 @@
 				6003F59D195388D20070C39A /* AppDelegate.m */,
 				6003F5A5195388D20070C39A /* ViewController.h */,
 				6003F5A6195388D20070C39A /* ViewController.m */,
-				4D359C8C19F9A69400667993 /* LaunchScreenViewController.h */,
-				4D359C8D19F9A69400667993 /* LaunchScreenViewController.m */,
 				4D359C8819F9A5C900667993 /* Main.storyboard */,
 				4D359C8A19F9A5EE00667993 /* Launch Screen.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -249,7 +244,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Mark Granoff";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -367,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
-				4D359C8E19F9A69400667993 /* LaunchScreenViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

@@ -1,14 +1,17 @@
 PODS:
   - LaunchScreen (0.1.0)
+  - OCMock (3.1.1)
 
 DEPENDENCIES:
   - LaunchScreen (from `../`)
+  - OCMock
 
 EXTERNAL SOURCES:
   LaunchScreen:
     :path: ../
 
 SPEC CHECKSUMS:
-  LaunchScreen: 3928bb5c5e47a7a5bf011f919570b058d6571c2d
+  LaunchScreen: d1db3c880ca6d0d2312d1226ce6c61ec18b78ab0
+  OCMock: f6cb8c162ab9d5620dddf411282c7b2c0ee78854
 
-COCOAPODS: 0.34.2
+COCOAPODS: 0.34.4

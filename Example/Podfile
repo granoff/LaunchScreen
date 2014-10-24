@@ -1,11 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'LaunchScreen', :exclusive => true do
+target 'LaunchScreen' do
   pod "LaunchScreen", :path => "../"
 end
 
 target 'Tests', :exclusive => true do
-  pod "LaunchScreen", :path => "../"
-
-  
+    pod 'OCMock'
 end
