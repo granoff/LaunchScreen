@@ -9,10 +9,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "LaunchScreen"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "View controller class providing interactive & dynamic splash screens"
   s.description      = <<-DESC
-LaunchScreen is a UIViewController class that exposes your LaunchScreen.xib as a view controller
+LaunchScreen is a UIViewController class that exposes your Launch Screen XIB as a view controller
 for your use as an interactive/dynamic splash screen, or simply as a snapshot image for a static
 splash screen.
                        DESC
