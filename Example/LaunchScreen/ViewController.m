@@ -26,12 +26,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+
+    // Instantiate a LaunchScreenViewController which will insert the UIView contained in our Launch Screen XIB
+    // as a subview of it's view.
     self.launchScreenVC = [[LaunchScreenViewController alloc] initFromStoryboard:self.storyboard];
+    
+    // Take a snapshot of the launch screen. You could do this at any time you like.
     self.snapshot = [_launchScreenVC snapshot];
 
-    
+
+    // The following code, if enabled, will display the launch screen view and add a UILabel to it.
+    // You could add almost anything, or do almost anything in any kind of view. But if you want your
+    // splash screen to be based off your launch screen, this works!
 #if USE_LAUNCH_AS_SPLASH == 1
     UIView *v = _launchScreenVC.view;
     [self.view addSubview:v];
@@ -80,6 +86,11 @@
 #endif
 }
 
+/**
+ *  Show the launch screen snapshot when the button on the main view is tapped.
+ *
+ *  @param sender UIButton that was tapped
+ */
 -(IBAction)showLaunchScreen:(id)sender
 {
     self.imageView = [[UIImageView alloc] initWithImage:_snapshot];
