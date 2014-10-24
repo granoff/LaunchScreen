@@ -10,18 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "LaunchScreen"
   s.version          = "0.1.0"
-  s.summary          = "View controller class providing interactive & dynamic splash screens"
+  s.summary          = "A short description of LaunchScreen."
   s.description      = <<-DESC
-LaunchScreen is a UIViewController class that exposes your LaunchScreen.xib as a view controller
-for your use as an interactive/dynamic splash screen, or simply as a snapshot image for a static
-splash screen.
+                       An optional longer description of LaunchScreen
+
+                       * Markdown format.
+                       * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/granoff/LaunchScreen"
+  s.homepage         = "https://github.com/<GITHUB_USERNAME>/LaunchScreen"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Mark H. Granoff" => "mark@granoff.net" }
-  s.source           = { :git => "https://github.com/granoff/LaunchScreen.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/hawkimedia'
+  s.author           = { "Mark Granoff" => "mark@granoff.net" }
+  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/LaunchScreen.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

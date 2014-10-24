@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HIViewController : UIViewController
+@interface ViewController : UIViewController
+
+-(IBAction)showLaunchScreen:(id)sender;
 
 @end

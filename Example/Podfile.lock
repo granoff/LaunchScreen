@@ -1,0 +1,14 @@
+PODS:
+  - LaunchScreen (0.1.0)
+
+DEPENDENCIES:
+  - LaunchScreen (from `../`)
+
+EXTERNAL SOURCES:
+  LaunchScreen:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LaunchScreen: 3928bb5c5e47a7a5bf011f919570b058d6571c2d
+
+COCOAPODS: 0.34.2

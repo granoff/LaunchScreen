@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fGU-VJ-Rm9">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="tKN-86-QWh">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hxR-aM-JTk" customClass="LaunchScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cDK-0v-gJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Nh-i9-VaI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qDc-RV-721">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpG-HM-DEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="-120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="am7-do-utw">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fGU-VJ-Rm9" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g5K-yh-TrQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="N0P-kY-WFV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NdI-IL-fFU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUI-2y-XPT">
+                                <rect key="frame" x="171" y="283" width="261" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Show Launch Screen Snapshot">
+                                    <color key="titleColor" red="0.26622470432707934" green="0.06354993653415697" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLaunchScreen:" destination="fGU-VJ-Rm9" eventType="touchUpInside" id="6cp-Lk-muh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Then tap to remove it again.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXK-Hv-VOG">
+                                <rect key="frame" x="206" y="325" width="189" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.2662247043" green="0.063549936530000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9734212794788486" blue="0.78341704672407442" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vXK-Hv-VOG" secondAttribute="centerX" id="J91-em-Uyi"/>
+                            <constraint firstItem="vXK-Hv-VOG" firstAttribute="top" secondItem="yUI-2y-XPT" secondAttribute="bottom" constant="8" id="R1i-Pd-l1D"/>
+                            <constraint firstAttribute="centerX" secondItem="yUI-2y-XPT" secondAttribute="centerX" constant="-1" id="XD4-xq-dPE"/>
+                            <constraint firstAttribute="centerY" secondItem="yUI-2y-XPT" secondAttribute="centerY" id="ze7-Ls-lNV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2R-vq-Bhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="583"/>
+        </scene>
+    </scenes>
+</document>
