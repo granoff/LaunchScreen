@@ -54,7 +54,7 @@ Once you have LaunchScreen installed, using it is quite simple.
 #import "LaunchScreenController.h"
 ```
 
-- Drag a UIViewController to your storyboard. S
+- Drag a UIViewController to your storyboard.
   - Set its class to `LaunchScreenViewController`
   - Set its storyboard identifier to `LaunchScreenViewController`
 
